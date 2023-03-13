@@ -264,7 +264,12 @@ $output = New-Object psobject -Property @{
         #Output Exporting to CSV File#
         ###############################
 
-     
+   #$output| Export-csv -append -force "C:\Users\vmadalik\Downloads\PowerShellPython\Temp.csv"  
+   
+		###############################
+        #Output Exporting to json File#
+        ###############################
+   
    $output| ConvertTo-json  |Out-File "C:\Users\vmadalik\Downloads\Jsonoutput.json"        
    
     
